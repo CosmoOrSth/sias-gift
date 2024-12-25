@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "siasgift:raw_sausage"
+    },
+    "result": "siasgift:cooked_sausage",
+    "experience": 0.1,
+    "cookingtime": 100
+}

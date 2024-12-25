@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###",
+      " P ",
+      " / "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:wheat"
+      },
+      "/": {
+        "item": "minecraft:milk_bucket"
+      },
+      "P": {
+        "item": "minecraft:egg"
+      }
+    },
+    "result": {
+      "item": "siasgift:yorkshire_pudding",
+      "count": 4
+    }
+  }

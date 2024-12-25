@@ -1,0 +1,17 @@
+{
+//-----Item Group-----//
+"itemgroup.siasgift": "Sia's Gift",
+
+//-----Food Items-----//
+
+"item.siasgift.yorkshire_pudding": "Yorkshire Pudding",
+
+"item.siasgift.raw_sausage": "Raw Sausage",
+"item.siasgift.cooked_sausage": "Cooked Sausage",
+
+"item.siasgift.raw_bacon": "Raw Bacon",
+"item.siasgift.cooked_bacon": "Cooked Bacon",
+
+"item.siasgift.pig_in_a_blanket": "Pig in a Blanket"
+
+}

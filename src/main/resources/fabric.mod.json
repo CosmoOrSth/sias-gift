@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "siasgift",
+	"version": "${version}",
+	"name": "Sia's Gift",
+	"description": "This mod is a gift by me to my best friend Oceania!",
+	"authors": [
+		"CosmoOrSth"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/siasgift/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cosmo.siasgift.SiasGift"
+		],
+		"client": []
+	},
+	"mixins": [
+		"siasgift.mixins.json",
+		{
+			"config": "modid.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
