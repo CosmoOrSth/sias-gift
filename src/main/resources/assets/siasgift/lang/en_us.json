@@ -1,17 +1,30 @@
 {
-//-----Item Group-----//
-"itemgroup.siasgift": "Sia's Gift",
+  //-----Item Group-----//
+  "itemgroup.siasgift": "Sia's Gift",
 
-//-----Food Items-----//
+  //-----Food Items-----//
 
-"item.siasgift.yorkshire_pudding": "Yorkshire Pudding",
+  "item.siasgift.yorkshire_pudding": "Yorkshire Pudding",
 
-"item.siasgift.raw_sausage": "Raw Sausage",
-"item.siasgift.cooked_sausage": "Cooked Sausage",
+  "item.siasgift.raw_sausage": "Raw Sausage",
+  "item.siasgift.cooked_sausage": "Cooked Sausage",
 
-"item.siasgift.raw_bacon": "Raw Bacon",
-"item.siasgift.cooked_bacon": "Cooked Bacon",
+  "item.siasgift.raw_bacon": "Raw Bacon",
+  "item.siasgift.cooked_bacon": "Cooked Bacon",
 
-"item.siasgift.pig_in_a_blanket": "Pig in a Blanket"
+  "item.siasgift.pig_in_a_blanket": "Pig in a Blanket",
+
+  "item.siasgift.raw_duck": "Raw Duck",
+  "item.siasgift.cooked_duck": "Cooked Duck",
+
+  "item.siasgift.duck_spawn_egg": "Spawn Duck",
+
+  //-----Sounds-----//
+  "subtitle.siasgift.duck_ambient": "Duck quacks",
+  "subtitle.siasgift.duck_hurt": "Duck is hurt",
+  "subtitle.siasgift.duck_death": "Duck dies"
+
+
+
 
 }

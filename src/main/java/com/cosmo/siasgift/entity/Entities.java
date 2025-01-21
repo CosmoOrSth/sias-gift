@@ -11,15 +11,17 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class Entities {
+
     public static final EntityType<DuckEntity> DUCK = Registry.register(Registries.ENTITY_TYPE,
-            new Identifier("siasgift", "Duck"),
+            new Identifier("siasgift", "duck"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, DuckEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.5f, 0.5f)).build());
+                    .dimensions(EntityDimensions.fixed(0.5f, 0.6f)).build());
 
     public static void registerModEntities() {
 
-        SiasGift.LOGGER.info("mod Entities loaded");
+        SiasGift.LOGGER.info("Registering Entities for Sia's Gift");
 
     }
+
 
 }

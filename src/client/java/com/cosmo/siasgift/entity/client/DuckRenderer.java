@@ -7,12 +7,11 @@ import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
-public class DuckRenderer extends MobEntityRenderer<DuckEntity, Duck<DuckEntity>> {
+public class DuckRenderer extends MobEntityRenderer<DuckEntity, DuckModel<DuckEntity>> {
 
     private static final Identifier TEXTURE = new Identifier("siasgift", "textures/entity/duck.png");
-
     public DuckRenderer(EntityRendererFactory.Context context) {
-        super(context, new Duck<>(context.getPart(ModelLayers.DUCK)), 0.4f);
+        super(context, new DuckModel<>(context.getPart(ModelLayers.DUCK)), 0.4f);
     }
 
     @Override
@@ -24,7 +23,7 @@ public class DuckRenderer extends MobEntityRenderer<DuckEntity, Duck<DuckEntity>
     public void render(DuckEntity mobEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
 
         if(mobEntity.isBaby()) {
-            matrixStack.scale(0.3f, 0.3f, 0.3f);
+            matrixStack.scale(0.5f, 0.5f, 0.4f);
         } else {
             matrixStack.scale(1f, 1f, 1f);
         }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "siasgift:raw_duck"
+  },
+  "result": "siasgift:cooked_duck",
+  "experience": 0.1,
+  "cookingtime": 100
+}

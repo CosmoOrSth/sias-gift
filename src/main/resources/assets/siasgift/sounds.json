@@ -1,0 +1,23 @@
+{
+  "duck_ambient": {
+    "subtitle": "subtitle.siasgift.duck_ambient",
+    "sounds": [
+      "siasgift:duck_ambient1",
+      "siasgift:duck_ambient2",
+      "siasgift:duck_ambient3"
+    ]
+  },
+  "duck_hurt": {
+    "subtitle": "subtitle.siasgift.duck_hurt",
+    "sounds": [
+      "siasgift:duck_hurt1",
+      "siasgift:duck_hurt2"
+    ]
+  },
+  "duck_death": {
+    "subtitle": "subtitle.siasgift.duck_death",
+    "sounds": [
+      "siasgift:duck_death"
+    ]
+  }
+}
