@@ -5,6 +5,7 @@ import com.cosmo.siasgift.entity.Entities;
 import com.cosmo.siasgift.entity.custom.DuckEntity;
 import com.cosmo.siasgift.items.SpawnEggItems;
 import com.cosmo.siasgift.sound.Sounds;
+import com.cosmo.siasgift.world.gen.EntityGeneration;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -52,6 +53,7 @@ public class SiasGift implements ModInitializer {
 		Sounds.registerSounds();
 
 		Entities.registerModEntities();
+		EntityGeneration.addSpawns();
 
 		LOGGER.info("hey look! Sia's Gift is working!");
 
