@@ -28,7 +28,7 @@ public class DuckEntity extends AnimalEntity {
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(0, new SwimGoal(this));
+        this.goalSelector.add(0, new SwimGoal(this)); 
         this.goalSelector.add(1, new EscapeDangerGoal(this, 1.4D));
         this.goalSelector.add(2, new AnimalMateGoal(this, 1.15D));
         this.goalSelector.add(3, new TemptGoal(this, 1.25D, Ingredient.ofItems(Items.BREAD), false));
@@ -62,11 +62,16 @@ public class DuckEntity extends AnimalEntity {
         } else {
             this.idleAnimationTimeout--;
         }
-        if (this.swimmingAnimationTimeout <= 0 && this.isTouchingWater()) {
-            this.swimmingAnimationTimeout = this.random.nextInt(40) + 80;
-            this.swimmingAnimationState.start(this.age);
+        if (this.isTouchingWater()) {
+            if (this.swimmingAnimationTimeout <= 0) {
+                this.swimmingAnimationTimeout = this.random.nextInt(40) + 80;
+                this.swimmingAnimationState.start(this.age);
+            } else {
+                this.swimmingAnimationTimeout--;
+            }
         } else {
-            this.swimmingAnimationTimeout--;
+            this.swimmingAnimationState.stop();
+            this.swimmingAnimationTimeout = 0;
         }
     }
 
